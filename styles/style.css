@@ -152,6 +152,10 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
   height: 95vh;
 }
 
+.hero h1 {
+  font-size: 2em;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   a {
