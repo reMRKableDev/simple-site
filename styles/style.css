@@ -1,0 +1,181 @@
+/* STANDARD BOX-SIZING */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* GENERAL STYLING FOR COMMON ELEMENTS */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+p,
+a,
+span {
+  font-family: "Raleway", sans-serif;
+}
+/* KEEP FOOTER AT THE BOTTOM */
+.site_body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site_content {
+  flex: 1;
+}
+/* TOP NAVIGATION BAR */
+.hamburger_button {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  padding: 1.66em 0.69em;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+
+.hamburger_button span {
+  height: 0.25em;
+  width: 2.19em;
+  border-radius: 0.13em;
+  background-color: #000000;
+  position: relative;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+.hamburger_button span:before {
+  top: -0.625em;
+  visibility: visible;
+}
+
+.hamburger_button span:after {
+  top: 0.625em;
+}
+
+.hamburger_button span:before,
+.hamburger_button span:after {
+  height: 0.25em;
+  width: 2.19em;
+  border-radius: 2px;
+  background-color: #000000;
+  position: absolute;
+  content: "";
+  transition: all 0.2s ease-in-out;
+}
+
+.hamburger_button:hover span,
+.hamburger_button:hover span:before,
+.hamburger_button:hover span:after {
+  background-color: #39424e;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .menu {
+  visibility: visible;
+}
+
+input[type="checkbox"]:checked ~ .hamburger_button:hover span,
+input[type="checkbox"]:checked ~ .hamburger_button span {
+  background: transparent;
+}
+
+input[type="checkbox"]:checked ~ .hamburger_button span:before {
+  transform: rotate(45deg) translate(7px, 7px);
+  opacity: 1;
+}
+input[type="checkbox"]:checked ~ .hamburger_button span:after {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.menu {
+  height: 100vh;
+  width: 100vw;
+  background: #f76b6c;
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+}
+.menu.active {
+  visibility: visible;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.menu ul li {
+  padding: 1em;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.menu ul li a:hover {
+  color: #333332;
+}
+
+.hero {
+  background-color: #fbfbf2;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23f76b6c' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23575f67' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23f69091' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23876268' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23f5adae' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23aa6469' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23f3c7c7' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23c7666a' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23f2dddd' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23e0696b' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23f1f1f1' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23f76b6c' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 95vh;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  a {
+    color: blue;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  a {
+    color: orange;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  a {
+    color: tomato;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  a {
+    color: violet;
+  }
+}
