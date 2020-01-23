@@ -20,12 +20,18 @@ h4,
 h5,
 h6 {
   font-family: "Ubuntu", sans-serif;
+  color: #39424e;
 }
 
 p,
 a,
 span {
   font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
 }
 /* KEEP FOOTER AT THE BOTTOM */
 .site_body {
@@ -142,6 +148,7 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
   color: #333332;
 }
 
+/* HERO SECTION */
 .hero {
   background-color: #fbfbf2;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23f76b6c' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23575f67' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23f69091' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23876268' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23f5adae' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23aa6469' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23f3c7c7' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23c7666a' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23f2dddd' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23e0696b' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23f1f1f1' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23f76b6c' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
@@ -150,10 +157,54 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
   background-repeat: no-repeat;
   background-position: center;
   height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero div {
+  text-align: center;
+  background-color: #f76b6c;
+  padding: 20px 20px;
+  box-shadow: 1px 1px 4px 0px #575f75;
 }
 
 .hero h1 {
-  font-size: 2em;
+  font-size: 7vw;
+}
+
+.hero h1 span {
+  color: #fbfbf2;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.hero p {
+  font-size: 3vw;
+  color: #fbfbf2;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  background-color: #fbfbf2; /* Green */
+  border: none;
+  color: #39424e;
+  font-family: "Ubuntu", sans-serif;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vw;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+}
+
+.hero button:hover {
+  background-color: #39424e; /* Green */
+  color: white;
+}
+
+.hero button:focus {
+  outline: 0;
 }
 
 /* Small devices (landscape phones, 576px and up) */
