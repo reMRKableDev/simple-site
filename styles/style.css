@@ -1,3 +1,6 @@
+/* IMPORT RESET.CSS */
+@import "reset.css";
+
 /* STANDARD BOX-SIZING */
 html {
   box-sizing: border-box;
