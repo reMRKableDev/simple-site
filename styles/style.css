@@ -32,6 +32,7 @@ span {
 p {
   font-size: 1em;
   line-height: 1.5em;
+  text-align: center;
 }
 /* KEEP FOOTER AT THE BOTTOM */
 .site_body {
@@ -156,7 +157,7 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 95vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,6 +206,26 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
 
 .hero button:focus {
   outline: 0;
+}
+
+/* ABOUT SECTION */
+.about h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2em;
+}
+
+.about div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border: 1px solid green;
+  padding: 15px 0;
+}
+
+.about div article {
+  text-align: center;
 }
 
 /* Small devices (landscape phones, 576px and up) */
