@@ -215,20 +215,37 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
 .about h1 {
   text-align: center;
   margin: 30px 0;
-  font-size: 2em;
+  font-size: 6vw;
+  color: #39424e;
 }
 
 .about div {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  border: 1px solid green;
+  flex-direction: column;
   padding: 15px 0;
 }
 
-.about div article {
+.portfolio {
   text-align: center;
+  border: 1px solid orange;
+  width: 100%;
+  margin: 15px 0;
+}
+.portfolio header {
+  margin: 5px 0;
+}
+
+.portfolio header h2 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #f76b6c;
+}
+.portfolio header p {
+  font-size: 0.8em;
+  color: #575f75;
 }
 
 /* Small devices (landscape phones, 576px and up) */
