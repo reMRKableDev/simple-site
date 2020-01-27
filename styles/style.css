@@ -1,3 +1,6 @@
+/* IMPORT RESET.CSS */
+@import "reset.css";
+
 /* STANDARD BOX-SIZING */
 html {
   box-sizing: border-box;
@@ -32,8 +35,9 @@ span {
 p {
   font-size: 1em;
   line-height: 1.5em;
+  text-align: center;
 }
-/* KEEP FOOTER AT THE BOTTOM */
+/* FLEXBOX: KEEP FOOTER AT THE BOTTOM */
 .site_body {
   display: flex;
   min-height: 100vh;
@@ -43,6 +47,21 @@ p {
 .site_content {
   flex: 1;
 }
+
+/* FLEXBOX: ROWS & COLUMNS */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
 /* TOP NAVIGATION BAR */
 .hamburger_button {
   position: absolute;
@@ -156,7 +175,7 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 95vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +204,7 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
 }
 
 .hero button {
-  background-color: #fbfbf2; /* Green */
+  background-color: #fbfbf2;
   border: none;
   color: #39424e;
   font-family: "Ubuntu", sans-serif;
@@ -199,12 +218,55 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
 }
 
 .hero button:hover {
-  background-color: #39424e; /* Green */
+  background-color: #39424e;
   color: white;
 }
 
 .hero button:focus {
   outline: 0;
+}
+
+/* ABOUT SECTION */
+.about h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 6vw;
+  color: #39424e;
+}
+
+.portfolio {
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.portfolio header {
+  margin-bottom: 5px;
+}
+
+.portfolio header h2 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #f76b6c;
+}
+
+.portfolio header p {
+  font-size: 0.8em;
+  color: #575f75;
+}
+
+.portfolio figure {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.portfolio figure img {
+  width: 80%;
+  height: auto;
+  margin: 0;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -225,6 +287,15 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
 @media (min-width: 992px) {
   a {
     color: tomato;
+  }
+  .column {
+    flex: 1;
+  }
+  .portfolio {
+    margin: 10px 10px;
+  }
+  .portfolio figure img {
+    width: 100%;
   }
 }
 
