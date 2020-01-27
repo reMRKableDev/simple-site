@@ -307,6 +307,54 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
   margin-bottom: 30px;
 }
 
+/* FOOTER SECTION */
+footer {
+  background-color: #39424e;
+}
+
+.links_container_footer {
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+.nav_links_footer a {
+  color: #fbfbf2;
+  margin: 0 5px;
+}
+
+.footer_nav nav a:hover {
+  text-decoration: underline;
+}
+
+.social_media_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_media_footer figure {
+  width: 50px;
+  height: 50px;
+  margin: 15px 5px;
+}
+
+.social_media_footer figure svg {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  fill: #fbfbf2;
+}
+
+.social_media_footer figure svg:hover {
+  fill: #f76b6c;
+  cursor: pointer;
+}
+
+.copyrights_footer {
+  margin: 15px 0;
+  color: #f76b6c;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   a {
