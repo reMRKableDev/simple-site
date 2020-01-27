@@ -86,25 +86,35 @@
             </figure>
             <p></p>
           </article>
-          <article class="column portfolio">
-            <header>
-              <h2>Project</h2>
-              <p>Project Description</p>
-            </header>
-            <figure>
-              <img src="./img/yellow-parrot.jpg" alt="project" />
-            </figure>
-          </article>
         </div>
       </section>
 
       <!-- CONTACT SECTION -->
-      <section class="contact">
-        <form action="">
-          <fieldset>
-            <legend>Get In Touch</legend>
-            <input type="text" name="name" placeholder="Full Name" /> <br />
-            <input type="email" name="email" placeholder="Email" /> <br />
+      <section class="row contact">
+        <div class="column">
+          <h1>Get In Touch</h1>
+          <form action="#">
+            <input
+              type="text"
+              name="fName"
+              placeholder="First Name"
+              autocomplete="off"
+            />
+            <br />
+            <input
+              type="text"
+              name="lName"
+              placeholder="Last Name"
+              autocomplete="off"
+            />
+            <br />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="off"
+            />
+            <br />
             <textarea
               name="message"
               placeholder="Type Your Message Here"
@@ -113,8 +123,8 @@
             ></textarea
             ><br />
             <button type="submit">Submit</button>
-          </fieldset>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
 
