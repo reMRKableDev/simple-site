@@ -28,7 +28,10 @@ h6 {
 
 p,
 a,
-span {
+span,
+.contact form input::placeholder,
+.contact form textarea::placeholder,
+.contact form button {
   font-family: "Raleway", sans-serif;
 }
 
@@ -37,6 +40,42 @@ p {
   line-height: 1.5em;
   text-align: center;
 }
+
+/* GENERAL STYLING FOR COMMON CLASSES AND/OR ELEMENTS FROM DIFFERENT SECTIONS */
+.about h1,
+.contact h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 6vw;
+  color: #39424e;
+}
+
+.hero button,
+.contact form button {
+  background-color: #fbfbf2;
+  border: none;
+  color: #39424e;
+  font-family: "Ubuntu", sans-serif;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vw;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+}
+
+.hero button:hover,
+.contact form button:hover {
+  background-color: #39424e;
+  color: white;
+}
+
+.hero button:focus,
+.contact form button:focus {
+  outline: 0;
+}
+
 /* FLEXBOX: KEEP FOOTER AT THE BOTTOM */
 .site_body {
   display: flex;
@@ -203,37 +242,7 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
   margin-bottom: 20px;
 }
 
-.hero button {
-  background-color: #fbfbf2;
-  border: none;
-  color: #39424e;
-  font-family: "Ubuntu", sans-serif;
-  padding: 15px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 2vw;
-  text-transform: uppercase;
-  transition-duration: 0.4s;
-}
-
-.hero button:hover {
-  background-color: #39424e;
-  color: white;
-}
-
-.hero button:focus {
-  outline: 0;
-}
-
 /* ABOUT SECTION */
-.about h1 {
-  text-align: center;
-  margin: 30px 0;
-  font-size: 6vw;
-  color: #39424e;
-}
-
 .portfolio {
   text-align: center;
   margin: 10px 0;
@@ -269,6 +278,35 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
   margin: 0;
 }
 
+/* CONTACT SECTION */
+.contact {
+  background-color: #f76b6c;
+}
+
+.contact h1 {
+  color: #fbfbf2;
+}
+
+.contact form {
+  text-align: center;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 80%;
+  margin: 10px 0;
+  padding: 15px;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form button {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   a {
@@ -290,6 +328,10 @@ input[type="checkbox"]:checked ~ .hamburger_button span:after {
   }
   .column {
     flex: 1;
+  }
+  .about,
+  .contact {
+    height: 100vh;
   }
   .portfolio {
     margin: 10px 10px;
